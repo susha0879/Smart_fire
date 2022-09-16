@@ -5,17 +5,6 @@
       <el-header>
         <Header />
       </el-header>
-      <div class="header-bottom">
-        <div class="select">
-          项目地址
-          <el-select class="m-2" placeholder="Select" size="small">
-            <el-option />
-          </el-select>
-        </div>
-        <div class="timer">
-          {{ nowTime }}
-        </div>
-      </div>
       <el-main>
         <router-view />
       </el-main>
@@ -41,6 +30,7 @@ onMounted(() => {
   margin: 0;
   padding: 0;
 }
+
 .common-layout,
 .el-container {
   width: 100%;
@@ -51,6 +41,7 @@ onMounted(() => {
   padding: 0;
   height: 46px;
 }
+
 .header-bottom {
   position: relative;
   height: 46px;
